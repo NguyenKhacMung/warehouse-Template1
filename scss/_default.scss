@@ -1,0 +1,81 @@
+body {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1147px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+p {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 160%;
+    color: #4B5D68;
+}
+
+.btn {
+    border-radius: 50px;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    color: #212353;
+    letter-spacing: 0.005em;
+    border: none;
+    outline: none;
+    &-primary {
+        padding: 17px 29px;
+        background: #FFFFFF;
+        box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
+        .icon {
+            img {
+                margin-left: 20px;
+            }
+        }
+    }
+    &-secondary {
+        padding: 16px 37px;
+        background-color: #9C69E2;
+        color: #FFFFFF;
+    }
+}
+
+.title-heading {
+    font-family: Helvetica;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 130%;
+    color: #212353;
+}
+
+a {
+    font-family: Avenir;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 160%;
+    letter-spacing: 0.005em;
+    color: #212353;
+    text-decoration: none;
+}
+
+.icon-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+    background: #e9e9ee;
+    color: #ffff;
+    font-size: 20px;
+    transition: all 0.25s linear;
+}
+
+.icon-item:hover {
+    background: #212353 !important;
+}

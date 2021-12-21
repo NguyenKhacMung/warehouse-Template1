@@ -1,0 +1,16 @@
+.about {
+    &-bg {
+        margin-bottom: 150px;
+        background: rgba(240, 99, 184, 0.15);
+        border-radius: 50px;
+        .img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .desc {
+            max-width: 505px;
+            padding: 0 15px;
+        }
+    }
+}

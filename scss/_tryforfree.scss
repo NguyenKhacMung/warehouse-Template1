@@ -1,0 +1,19 @@
+.tryforfree {
+    .body {
+        padding-top: 100px;
+        padding-bottom: 150px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .title-heading {
+            margin-bottom: 20px;
+        }
+        .btn {
+            font-weight: 900;
+            .btn-secondary {
+                margin-right: 30px;
+                background-color: #F063B8;
+            }
+        }
+    }
+}

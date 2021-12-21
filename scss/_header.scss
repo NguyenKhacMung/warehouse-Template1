@@ -1,0 +1,29 @@
+.header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    align-items: center;
+    &-menu {
+        margin-left: 120px;
+        margin-right: auto;
+        list-style: none;
+        display: inline-flex;
+        margin-bottom: 0;
+    }
+    .header-item+.header-item {
+        margin-left: 40px;
+    }
+    &-item .header-link {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 160%;
+        color: #4B5D68;
+        text-decoration: none;
+        transition: all 0.2s linear;
+    }
+    .header-link:hover {
+        color: #212353;
+        font-weight: 800;
+    }
+}
