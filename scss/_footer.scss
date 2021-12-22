@@ -14,7 +14,7 @@
     }
     &-link {
         display: inline-block;
-        font-weight: normal;
+        font-weight: 400;
         font-size: 16px;
         line-height: 250%;
         color: #212353;
@@ -68,6 +68,17 @@
         }
         .comment {
             background: #f3f3f3;
+            width: 60px;
+            height: 60px;
+        }
+    }
+    @media (max-width: 565px) {
+        margin-bottom: 50px;
+        .Warehouse .title {
+            margin-bottom: 40px;
+        }
+        .copyright {
+            margin-top: 50px;
         }
     }
 }

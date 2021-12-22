@@ -1,19 +1,20 @@
 mixin item(img, title, desc)
-    .col-md-6.item 
-        .img 
-            img(src=img, alt="")
-        .body
-            h2.title-item=title 
-            p=desc
-            a.link(href="#") 
-                | Learn more
-                span.icon 
-                    img(src="./assets/images/right.svg", alt="")
+    .col-lg-6.wrap-item
+        .item 
+            img.bg(src="./assets/images/bg.png", alt="")
+            .img 
+                img(src=img, alt="")
+            .body
+                h2.title-item=title 
+                p=desc
+                a.link(href="#") 
+                    | Learn more
+                    span.icon 
+                        img(src="./assets/images/right.svg", alt="")
 
 mixin slide-card(img, name,work,text)
     .card-item 
-        .avt
-            img(src=img, alt="")
+        img.avt(src=img, alt="")
         .body  
             h4.name=name 
             a.work(href="#")=work

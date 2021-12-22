@@ -2,6 +2,14 @@
     .container {
         margin-bottom: 282px;
     }
+    .bg {
+        position: absolute;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        height: 100%;
+        z-index: -4;
+    }
     &-title {
         max-width: 585px;
         text-align: center;
@@ -11,15 +19,19 @@
         }
     }
     .list {
+        .wrap-item {
+            padding: 0 20px;
+        }
         .item {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-top: 50px;
+            position: relative;
+            padding: 50px 50px 35px 0;
         }
         .title-item {
             font-family: Helvetica;
-            font-style: normal;
             font-weight: normal;
             font-size: 24px;
             line-height: 130%;
@@ -27,9 +39,7 @@
             margin-bottom: 20px;
         }
         p {
-            font-family: Avenir;
-            font-style: normal;
-            font-weight: normal;
+            font-weight: 400;
             font-size: 16px;
             line-height: 160%;
             color: #4B5D68;
@@ -39,6 +49,34 @@
         .icon img {
             margin-left: 22px;
             width: 20px;
+        }
+    }
+    @media (max-width: 768px) {
+        .bg {
+            width: 90%;
+        }
+        .list p {
+            max-width: 75vw;
+        }
+    }
+    @media (max-width: 565px) {
+        .list {
+            .wrap-item {
+                padding: 0 15px;
+            }
+            .item {
+                padding: 15px 5px;
+                .img img {
+                    width: 70%;
+                    height: 70%;
+                }
+            }
+        }
+        .container {
+            margin-bottom: 100px;
+        }
+        .features-title {
+            margin-bottom: 20px;
         }
     }
 }
