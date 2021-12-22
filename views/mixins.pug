@@ -1,7 +1,7 @@
-mixin item(img, title, desc)
+mixin item(bg,img, title, desc)
     .col-lg-6.wrap-item
         .item 
-            img.bg(src="./assets/images/bg.png", alt="")
+            img.bg(src=bg, alt="")
             .img 
                 img(src=img, alt="")
             .body
@@ -9,8 +9,7 @@ mixin item(img, title, desc)
                 p=desc
                 a.link(href="#") 
                     | Learn more
-                    span.icon 
-                        img(src="./assets/images/right.svg", alt="")
+                    img(src="./assets/images/right.svg", alt="")
 
 mixin slide-card(img, name,work,text)
     .card-item 

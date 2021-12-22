@@ -46,7 +46,7 @@
             max-width: 220px;
             margin-bottom: 20px;
         }
-        .icon img {
+        .link img {
             margin-left: 22px;
             width: 20px;
         }
@@ -57,6 +57,9 @@
         }
         .list p {
             max-width: 75vw;
+        }
+        .list .item {
+            padding: 50px;
         }
     }
     @media (max-width: 565px) {

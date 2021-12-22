@@ -101,7 +101,8 @@
             padding: 50px 30px;
         }
         @media (max-width: 565px) {
-            padding: 30px 15px;
+            padding: 15px;
+            border-radius: 20px;
             .title-heading {
                 margin-bottom: 50px;
             }
@@ -111,7 +112,7 @@
             .card-item {
                 max-width: 80vW;
                 flex-direction: column;
-                padding: 30px;
+                padding: 15px;
             }
             .slick-arrow {
                 display: none !important;
