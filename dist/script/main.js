@@ -18,6 +18,7 @@ $(document).ready(function() {
     }
     const btntoogle = document.querySelector(".btn-toggle");
     const menu = document.querySelector(".header");
+    const menuAll = document.querySelector(".header ul li a");
     const btnclose = document.querySelector(".btn-close");
     btntoogle && btntoogle.addEventListener("click", showNav);
 
@@ -28,10 +29,9 @@ $(document).ready(function() {
 
     document.addEventListener('click', function(event) {
 
-        if (!menu.contains(event.target) && !btntoogle.contains(event.target)) {
+        if (!event.target.matches(".header") && !btntoogle.contains(event.target)) {
             closeNav();
         }
-
     });
 
     function closeNav() {
@@ -41,7 +41,18 @@ $(document).ready(function() {
     $(".header ul a").on("click", function(e) {
         e.preventDefault();
         var href = $(this).attr("href");
-        $("html, body").animate({ scrollTop: $(href).offset().top - 160 }, 300);
+        var heightNav = 0;
+        if (window.innerWidth > 565) {
+            heightNav = 160;
+        }
+
+        scroll(heightNav, href);
     });
+
+    function scroll(heightMenu, href) {
+        if ($(href).length)
+            $("html, body").animate({ scrollTop: $(href).offset().top - heightMenu }, 300);
+    }
+
 
 });
